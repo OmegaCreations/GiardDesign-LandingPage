@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500&display=swap');
+
+/* colors */
+:root {
+    --black: #111111;
+    --green: #1B5B31;
+    --grey: #F5F0EC;
+    --beige: #DCC1AB;
+}
