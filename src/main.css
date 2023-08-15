@@ -12,3 +12,98 @@
     --grey: #F5F0EC;
     --beige: #DCC1AB;
 }
+
+/* js props */
+.rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transition: .3s cubic-bezier(.17,.67,.21,1.69);
+}
+
+.rotate-reset {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transition: .3s cubic-bezier(.17,.67,.21,1.69);
+}
+
+/* navbar styles */
+.nav-item {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.nav-item:hover {
+    color: var(--green);
+    cursor: pointer;
+}
+
+.nav-item:hover path{
+    fill: var(--green);
+}
+
+
+.offer:hover .drop-menu{
+    visibility: visible;
+    display: inline;
+}
+
+.drop-item {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+    z-index: 20;
+    position: relative;
+
+    background-color: #fff;
+    padding: 20px 24px;
+    transition: .3s cubic-bezier(.17,.67,.21,1.69);
+}
+
+.drop-item:hover {
+    color: var(--grey);
+    cursor: pointer;
+}
+
+.drop-item::before,
+.drop-item::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: var(--green);
+  transition: .3s cubic-bezier(.17,.67,.21,1.69);
+}
+
+.drop-item::after {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+.drop-item:hover::after { 
+    width: 100%; 
+}
+
+.offer:hover .drop-menu{
+    visibility: visible;
+    display: inline;
+}
+
+/* burger menu */
+.burger-menu {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+/* hero styles */
+.hero {
+    background-color: var(--beige);
+}
