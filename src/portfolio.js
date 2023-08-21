@@ -1,7 +1,7 @@
 // load pictures into DOM
 const loadPics = (start, end, source) => {
     for(var i = start; i < end+1; i++){
-        $('#macy-container').append(`<a data-mfp-src=${source+'p'+i+'.png'} title="2023 Ogród: ${i}"><img src=${source+'p'+i+'.png'} /></a>`);
+        $('#macy-container').append(`<a class="new-child" data-mfp-src=${source+'p'+i+'.png'} title="2023 Ogród: ${i}"><img src=${source+'p'+i+'.png'} /></a>`);
     }
 
     Macy({
@@ -19,6 +19,8 @@ const loadPics = (start, end, source) => {
             400: 1
         }
     });
+
+    $('#macy-container a').css("opacity", "1");
 }
 
 //  remove pictures from DOM
@@ -47,8 +49,8 @@ const removePics = (count) => {
 $(document).ready(function() {
 
     const source = "../src/assets/portfolio/"; // source folder with photos named p1.png, p2.png etc...
-    var pic_count = 9; // last pic count
-    var curr_count = 5; // current number loaded on page
+    var pic_count = 9; // last pic count / można zmienić przy większej ilości dostępnych zdjęć
+    var curr_count = 4; // current number loaded on page
     var loaded = false; // loaded new photos?
 
     loadPics(1, curr_count, source); // load first pics
