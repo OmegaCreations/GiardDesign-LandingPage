@@ -8,11 +8,14 @@
     <meta name=”robots” content="index, follow">
 
     <link href="./public.css" rel="stylesheet">
+    <link href="../src/assets/library/magnific-popup.css" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.7.0.slim.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -161,9 +164,9 @@
                 </div>
                 <button class="flex items-center gap-[10px]">
                     <p class="text-center text-base font-normal leading-6">Dowiedz się więcej</p>
-                    <svg width="16" height="16" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.2049 13.0607C26.7907 12.4749 26.7907 11.5251 26.2049 10.9393L16.6589 1.3934C16.0732 0.807611 15.1234 0.807611 14.5376 1.3934C13.9518 1.97919 13.9518 2.92893 14.5376 3.51472L23.0229 12L14.5376 20.4853C13.9518 21.0711 13.9518 22.0208 14.5376 22.6066C15.1234 23.1924 16.0732 23.1924 16.6589 22.6066L26.2049 13.0607ZM0.855774 13.5H25.1442V10.5H0.855774V13.5Z" fill="black"/>
-                    </svg>                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#F5F0EC"/>
+                    </svg>                       
                 </button>
             </a>
             <a href="#" class="offer-card">
@@ -178,9 +181,9 @@
                 </div>
                 <button class="flex items-center gap-[10px]">
                     <p class="text-center text-base font-normal leading-6">Dowiedz się więcej</p>
-                    <svg width="16" height="16" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.2049 13.0607C26.7907 12.4749 26.7907 11.5251 26.2049 10.9393L16.6589 1.3934C16.0732 0.807611 15.1234 0.807611 14.5376 1.3934C13.9518 1.97919 13.9518 2.92893 14.5376 3.51472L23.0229 12L14.5376 20.4853C13.9518 21.0711 13.9518 22.0208 14.5376 22.6066C15.1234 23.1924 16.0732 23.1924 16.6589 22.6066L26.2049 13.0607ZM0.855774 13.5H25.1442V10.5H0.855774V13.5Z" fill="black"/>
-                    </svg>                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#F5F0EC"/>
+                    </svg>                       
                 </button>
             </a>
             <a href="#" class="offer-card">
@@ -193,9 +196,9 @@
                 </div>
                 <button class="flex items-center gap-[10px]">
                     <p class="text-center text-base font-normal leading-6">Dowiedz się więcej</p>
-                    <svg width="16" height="16" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.2049 13.0607C26.7907 12.4749 26.7907 11.5251 26.2049 10.9393L16.6589 1.3934C16.0732 0.807611 15.1234 0.807611 14.5376 1.3934C13.9518 1.97919 13.9518 2.92893 14.5376 3.51472L23.0229 12L14.5376 20.4853C13.9518 21.0711 13.9518 22.0208 14.5376 22.6066C15.1234 23.1924 16.0732 23.1924 16.6589 22.6066L26.2049 13.0607ZM0.855774 13.5H25.1442V10.5H0.855774V13.5Z" fill="black"/>
-                    </svg>                        
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#F5F0EC"/>
+                    </svg>                       
                 </button>
             </a>
         </div>
@@ -203,26 +206,97 @@
     </section>
 
     <!-- About section -->
-    <section>
-
+    <section class="about-section items-center pb-12 md:pb-0 grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-1 gap-[64px]">
+        <div class="about-img"></div>
+        <div class="flex flex-col items-start gap-[72px] max-w-[596px] px-4 sm:px-10 xl:px-0 flex-shrink-0">
+            <!-- text -->
+            <div class="flex flex-col items-start gap-4 self-stretch">
+                <h2>O firmie</h2>
+                <div class="flex flex-col gap-[40px] self-stretch">
+                    <h3 class="leading-none font-medium xl:leading-[115%] text-[40px] xl:text-[48px]">Tworzymy z <em>pasją</em></h3>
+                    <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                </div>
+            </div>
+            <!-- button -->
+            <button class="about-btn">
+                Poznaj nas bliżej
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M7.99528 -1.20755e-06L7.09959 0.895696L13.5769 7.36358L-7.5502e-07 7.36358L-6.43745e-07 8.63642L13.5675 8.63642L7.09959 15.1043L7.99529 16L16 7.99529L7.99528 -1.20755e-06Z" fill="#F5F0EC"/>
+                </svg>                                            
+            </button>
+        </div>
     </section>
     
     <!-- Portfolio section -->
-    <section>
-
+    <section class="portfolio flex relative flex-col items-start pt-[120px] pb-11 gap-2">
+        <div class="flex flex-col items-start gap-24 w-full">
+            <!-- text -->
+            <div class="flex flex-col gap-4 items-start md:pl-40 self-center md:self-start">
+                <h2>Realizacje</h2>
+                <h3>Nasze <em>projekty</em></h3>
+            </div>
+            <!-- photos -->
+            <div id="macy-container">
+                <!-- <a data-mfp-src="../src/assets/portfolio/p1.png" title="2023 Ogród"><img src="../src/assets/portfolio/p1.png"/></a> -->
+            </div>
+        </div>
+        <!-- button -->
+        <div class="shadow absolute bottom-0 left-0 w-full h-1/2 pointer-events-none"></div>
+        <button class="inline-flex z-50 px-[22px] pt-3 pb-[14px] items-center gap-2">
+            <p>Rozwiń</p>
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8.49529L15.1043 7.59959L8.63642 14.0769L8.63642 0.5L7.36358 0.5L7.36358 14.0675L0.895699 7.59959L9.54553e-08 8.49529L8.00471 16.5L16 8.49529Z" fill="#1B5B31"/>
+            </svg>                
+        </button>
     </section>
 
     <!-- Contact section -->
-    <section>
-
+    <section class="contact flex flex-col px-0 py-[60px] content-center items-center">
+        <div class="rect flex w-[1040px] px-[110px] py-[120px] items-end gap-16">
+            <h3>Zostańmy w kontakcie!<br/>Znajdziesz nas na <em>Instagramie.</em></h3>
+            <div class="flex flex-col items-start gap-6">
+                <p>Śledź nasze<br/>najnowsze realizacje!</p>
+                <button>Instagram</button>
+            </div>
+        </div>
     </section>
 
     <!-- Footer section -->
-    <footer>
-
+    <footer class="flex flex-col items-center gap-[120px] px-64 py-20">
+        <div class="flex flex-col items-start gap-[62px] w-full">
+            <div class="flex justify-between items-center self-stretch">
+                <img src="../src/assets/logo_light.svg" />
+                <div class="cta flex items-center gap-6">
+                    <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+                    <button>Skontaktuj się z nami</button>
+                </div>
+            </div>
+            <hr class="w-full h-[1px]" />
+            <div class="flex justify-between items-start w-full">
+                <div class="flex items-center gap-12">
+                    <a>Kontakt</a>
+                    <a>Instagram</a>
+                    <a>Facebook</a>
+                    <a>LinkedIn</a>
+                </div>
+                <div class="flex items-start gap-12">
+                    <span>000-000-000</span>
+                    <span>giarddesign@kontakt.pl</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex w-full justify-between items-center">
+            <span class="text-base tracking-[-0.16px]">Prawa zastrzeżone &copy; 2022</span>
+            <div class="flex items-center gap-4">
+                <span class="text-base tracking-[-0.16px]">made by</span>
+                <img src="../src/assets/logo_adrespect.svg" />
+            </div>
+        </div>
     </footer>
 
     <script type="text/javascript" src="../src/menu.js"></script>
     <script type="text/javascript" src="../src/slider.js"></script>
+    <script type="text/javascript" src="../src/portfolio.js"></script>
+    <script type="text/javascript" src="../src/assets/library/jquery.magnific-popup.js"></script>
 </body>
 </html>

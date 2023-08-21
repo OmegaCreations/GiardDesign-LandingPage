@@ -27,6 +27,10 @@
     transition: .3s cubic-bezier(.17,.67,.21,1.69);
 }
 
+.shadow {
+    background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+}
+
 /* navbar styles */
 .nav-item {
     font-size: 14px;
@@ -296,4 +300,248 @@
 
 .offer-card:hover button {
     gap: 13px;
+}
+
+
+/* About section */
+.about-section {
+    background-color: var(--green);
+    height: 100vh;
+}
+
+.about-section h2 {
+    font-family: 'Inter', sans-serif;
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.12px;
+}
+
+.about-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grey);
+    letter-spacing: -1.44px;
+}
+
+.about-section em {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+}
+
+.about-section p {
+    color: var(--grey);
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
+
+.about-img {
+    background-image: url("../src/assets/about_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about-btn {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 22px 14px 22px;
+    align-items: center;
+    align-self: flex-start;
+    gap: 8px;
+    z-index: 0;
+
+    border-radius: 200px;
+    border: 1px solid var(--grey);
+    color: var(--grey);
+
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+
+.about-btn path {
+    fill: var(--grey);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+
+.about-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background-color: var(--grey);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    border-radius: 200px;
+}
+
+.about-btn:hover::after {
+    width: 100%;
+}
+
+.about-btn:hover {
+    border-color: var(--beige);
+    color: var(--green-shadow);
+}
+
+.about-btn:hover path {
+    fill: var(--green-shadow)
+}
+
+/* Portfolio section */
+.portfolio {
+    background-color: var(--beige);
+}
+
+.portfolio h2 {
+    color: var(--green);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: -0.12px;
+}
+
+.portfolio h3 {
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    line-height: 115%;
+    letter-spacing: -1.44px;
+    font-weight: 500;
+}
+
+.portfolio em {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: normal;
+}
+
+.portfolio button {
+    border-radius: 200px;
+    border: 1px solid var(--black);
+    align-self: center;
+    margin-bottom: 15px;
+
+    color: var(--black, #111);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+}
+
+.portfolio button path {
+    fill: var(--black);
+}
+
+#macy-container {
+    width: 100%;
+}
+
+#macy-container a:hover {
+    cursor: pointer;
+}
+
+/* Contact section */
+.contact {
+    background-color: var(--grey);
+}
+
+.contact p {
+    color: var(--grey, #F5F0EC);
+
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
+
+.contact button {
+    display: flex;
+    padding: 10px 24px 12px 24px;
+    align-items: center;
+    gap: 10px;
+
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    line-height: 150%; /* 24px */
+
+    color: var(--green);
+    border-radius: 200px;
+    background: var(--grey);
+}
+
+.contact .rect {
+    background-color: var(--green);
+}
+
+.rect h3 {
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -2px;
+}
+
+.rect em {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Footer section */
+
+footer {
+    background-color: var(--black);
+}
+
+footer .cta p{
+    color: var(--grey);
+
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+}
+
+footer .cta button {
+    display: flex;
+    padding: 12px 24px 14px 24px;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 200px;
+    background: var(--green);
+    
+    color: var(--grey);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    line-height: 150%; 
+}
+
+footer hr {
+    background-color: var(--grey);
+}
+
+footer a {
+    color: var(--grey);
+    text-align: center;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.14px;
+}
+
+footer span {
+    color: var(--grey, #F5F0EC);
+    
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.14px;
 }
