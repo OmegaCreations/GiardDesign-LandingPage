@@ -46,3 +46,12 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
     $('body, html').animate({scrollTop: pos}, 500);
 });
+
+
+
+// click data
+$(".offer-card").on("click", function(){
+    $(this).find(".offer-text").toggleClass("hidden");
+    $(this).find(".offer-button").toggleClass("hidden");
+    $(this).find(".click-data").toggleClass("hidden");
+})

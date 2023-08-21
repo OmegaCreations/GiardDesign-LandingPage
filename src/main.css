@@ -374,6 +374,10 @@
     fill: var(--green);
 }
 
+.offer-card:hover {
+    cursor: pointer;
+}
+
 .offer-card:hover h3 {
     margin-top: 5px;
     color: var(--green);
@@ -388,6 +392,25 @@
 }
 
 
+/* offer click data */
+.click-data h3 {
+    color: var(--black);
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.click-data p {
+    color: var(--black);
+    font-size: 14px;
+}
+
+.click-data span {
+    color: var(--beige);
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+    align-self: flex-end;
+}
 
 /* About section */
 .about-section {

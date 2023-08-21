@@ -916,6 +916,11 @@ video {
   line-height: 1.25rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1342,6 +1347,10 @@ video {
   fill: var(--green);
 }
 
+.offer-card:hover {
+  cursor: pointer;
+}
+
 .offer-card:hover h3 {
   margin-top: 5px;
   color: var(--green);
@@ -1353,6 +1362,27 @@ video {
 
 .offer-card:hover p {
   margin-top: 2px;
+}
+
+/* offer click data */
+
+.click-data h3 {
+  color: var(--black);
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.click-data p {
+  color: var(--black);
+  font-size: 14px;
+}
+
+.click-data span {
+  color: var(--beige);
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Inter', sans-serif;
+  align-self: flex-end;
 }
 
 /* About section */
