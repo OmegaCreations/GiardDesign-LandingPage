@@ -548,6 +548,14 @@
     fill: var(--black);
 }
 
+.portfolio button svg {
+    transition: all 0.2s cubic-bezier(.5, .24, 0, 1);
+}
+
+.portfolio button:hover svg {
+    margin-top: 4px;
+}
+
 #macy-container {
     width: 100%;
     overflow: hidden;
@@ -589,6 +597,13 @@
     color: var(--green);
     border-radius: 200px;
     background: var(--grey);
+
+    transition: all 0.2s ease;
+}
+
+.contact button:hover {
+    background-color: var(--black);
+    color: var(--grey); 
 }
 
 .contact .rect {
@@ -636,6 +651,7 @@ footer .cta button {
     text-align: center;
     font-family: 'Inter', sans-serif;
     line-height: 150%; 
+    transition: all 0.2s ease;
 }
 
 footer hr {
@@ -659,4 +675,9 @@ footer span {
     font-size: 14px;
     line-height: 150%;
     letter-spacing: -0.14px;
+}
+
+footer button:hover {
+    background-color: var(--grey);
+    color: var(--green);
 }
