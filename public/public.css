@@ -604,10 +604,6 @@ video {
   z-index: 50;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .mr-\[48px\] {
   margin-right: 48px;
 }
@@ -618,6 +614,10 @@ video {
 
 .mt-\[48px\] {
   margin-top: 48px;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .flex {
@@ -829,6 +829,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -891,6 +896,10 @@ video {
 
 .pt-\[120px\] {
   padding-top: 120px;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .text-center {
@@ -1817,6 +1826,10 @@ footer button:hover {
   .xl\:px-64 {
     padding-left: 16rem;
     padding-right: 16rem;
+  }
+
+  .xl\:pr-0 {
+    padding-right: 0px;
   }
 
   .xl\:text-\[48px\] {
