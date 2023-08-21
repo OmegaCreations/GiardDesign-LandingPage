@@ -5,7 +5,7 @@ $(window).on("load",function() {
       $(".fade").each(function() {
 
         // Check the location of each desired element 
-        var objectBottom = $(this).offset().top + $(this).innerHeight();
+        var objectBottom = $(this).offset().top + $(this).innerHeight() + 100;
         var direction = $(this).attr('direction') == 'left' ? 'translateX(-10px)' : 'translateX(10px)'; //
         
         // If the element is completely within bounds of the window, fade it in 
