@@ -31,12 +31,6 @@ $('a[href^="#close"]').click(function(e) {
     $("#search-box").toggleClass("hidden");
 });
 
-$(document).keyup(function(e) {
-    if (e.keyCode == 27) {
-        $("#search-box").removeClass("hidden");
-    }
-});
-
 
 $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id
