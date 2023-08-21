@@ -22,18 +22,18 @@ $('a[href^="#search"]').click(function(e) {
 
     $("#search-box").toggleClass("hidden");
     setTimeout(function() {
-      inputSearch.focus();
+    inputSearch.focus();
     }, 800);
-  });
-  
-  $('a[href^="#close"]').click(function(e) {
+});
+
+$('a[href^="#close"]').click(function(e) {
     e.preventDefault()
     $("#search-box").toggleClass("hidden");
-  });
-  
-  $(document).keyup(function(e) {
+});
+
+$(document).keyup(function(e) {
     if (e.keyCode == 27) {
-        $("#search-box").toggleClass("hidden");
+        $("#search-box").removeClass("hidden");
     }
 });
 

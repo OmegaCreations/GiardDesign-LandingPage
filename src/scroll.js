@@ -6,7 +6,7 @@ $(window).on("load",function() {
 
         // Check the location of each desired element 
         var objectBottom = $(this).offset().top + $(this).innerHeight();
-        var direction = $(this).attr('direction') == 'left' ? 'translateX(-25px)' : 'translateX(25px)'; //
+        var direction = $(this).attr('direction') == 'left' ? 'translateX(-10px)' : 'translateX(10px)'; //
         
         // If the element is completely within bounds of the window, fade it in 
         if (objectBottom < windowBottom) { //object comes into view (scrolling down)
