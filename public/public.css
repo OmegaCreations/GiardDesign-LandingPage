@@ -1689,6 +1689,10 @@ footer button:hover {
     padding-right: 110px;
   }
 
+  .sm\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
