@@ -1,6 +1,5 @@
 # GiardDesign-LandingPage
-Recruitment task and graphic design provided by adRespect company.
-
+Preview: https://omegacreations.github.io/GiardDesign-LandingPage/public/index.html
 Stack used:
-- Vanilla JS
+- Vanilla JS, JQuery
 - CSS + Tailwind
